@@ -4,7 +4,7 @@ on:                                    # when you want to execute the workflow
     branches:                          # provide which branches
       - main
 jobs:                                    # here u can provide multiple jobs
-  first-hello-world:                       # here u can provide any name inside you can write where u want to execute 
+  first-hello-world-job:                       # here u can provide any name inside you can write where u want to execute 
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
