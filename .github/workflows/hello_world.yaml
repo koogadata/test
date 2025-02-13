@@ -1,0 +1,13 @@
+name: hello world
+on:                                    # when you want to execute the workflow
+  push:                                # basically execute it on push
+    branches:                          # provide which branches
+      - main
+jobs:                                    # here u can provide multiple jobs
+  first-hello-world:                       # here u can provide any name inside you can write where u want to execute 
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
+      - name: print
+        uses: echo "helllo macha"
